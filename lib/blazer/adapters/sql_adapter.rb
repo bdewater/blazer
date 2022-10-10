@@ -221,7 +221,7 @@ module Blazer
 
       # seperate from select_all to prevent mysql error
       def execute(statement)
-        connection_model.connection.execute(statement)
+        connection_model.connection.execute_query(statement)
       end
 
       def postgresql?
